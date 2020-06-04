@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+table,
+thead,
+tr {
+  width: 100%;
+}
+table {
+  margin-top: 15px;
+}
+tr {
+  display: flex;
+  justify-content: space-around;
+}
+th {
+  color: #65afbf;
+}
+.top-row {
+  padding-bottom: 5px;
+  border-bottom: 1px solid gray;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.new-book {
+  margin: 30px 0;
+}
+.new-book h1 {
+  font-size: 65px;
+  font-weight: 300;
+  color: #65afbf;
+  margin-bottom: 25px;
+  text-align: center;
+}
+#book-form div {
+  max-width: 400px;
+  margin: 10px auto;
+}
+#book-form label {
+  color: #4b83a6;
+  display: block;
+  text-align: left;
+}
+#book-form input {
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 5px;
+  min-width: 200px;
+  flex-basis: 80%;
+  padding: 5px;
+  width: 100%;
+}
+#book-form input:focus {
+  outline: none;
+}
+#book-form #submit {
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 20px;
+  flex-basis: 80%;
+  background-color: #4b83a6;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: all 0.5s;
+}
+#book-form #submit:hover {
+  cursor: pointer;
+}
+#book-form #submit:active {
+  background-color: #1d71a5;
+  color: gray;
+}
+.success,
+.error {
+  color: white;
+  padding: 5px;
+  margin: 5px 0 15px 0;
+}
+.success {
+  background: green;
+}
+.error {
+  background: red;
+}
