@@ -5,4 +5,4 @@ This project is a Book List built using Object Oriented Programming. A book can 
 
 Technology Used: HTML, CSS, JavaScript, OOP
 
-Link: https://dallinrodgers.github.io/GifTastic/
+Link: https://dallinrodgers.github.io/Book-List-OOP/
