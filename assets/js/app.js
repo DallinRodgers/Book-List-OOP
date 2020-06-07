@@ -17,7 +17,6 @@ UI.prototype.addBookToList = function (book) {
   <td>${book.title}</td>
   <td>${book.author}</td>
   <td>${book.isbn}</td>
-  <td><a href="#" class="favorite">Favorite</a></td>
   <td><a href="#" class="delete">X</a></td>
   `;
 
@@ -89,6 +88,8 @@ function notEmptyStr(str) {
 document.querySelector("#book-list").addEventListener("click", function (e) {
   const ui = new UI();
 
-  ui.deleteBook(e.target);
-  ui.showAlert("Book Removed!", "success");
+  if (e.target.classList.contains("delete")) {
+    ui.deleteBook(e.target);
+    ui.showAlert("Book Removed!", "success");
+  }
 });
